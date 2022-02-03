@@ -6,5 +6,8 @@ module.exports = {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
   },
+  images: {
+    domains: ["m.media-amazon.com"],
+  },
   reactStrictMode: true,
 };
