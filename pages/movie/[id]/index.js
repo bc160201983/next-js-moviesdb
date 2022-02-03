@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { API_ENDPOINT } from "../../../context/context";
 import Link from "next/link";
@@ -29,7 +30,7 @@ const index = ({ data }) => {
   const { Poster: poster, Title: title, Plot: plot, Year: year } = movie;
   return (
     <section className="single-movie">
-      <img src={poster} alt={title} />
+      <Image src={poster} alt={title} />
       <div className="single-movie-info">
         <h2>{title}</h2>
         <p>{plot}</p>

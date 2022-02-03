@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useGlobalContext } from "../context/context";
 const url =
   "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
@@ -17,7 +18,7 @@ const Movies = () => {
           <Link href={`movie/${id}`} key={id}>
             <a className="movie">
               <article>
-                <img src={poster === "N/A" ? url : poster} alt={title} />
+                <Image src={poster === "N/A" ? url : poster} alt={title} />
                 <div className="movie-info">
                   <h4 className="title">{title}</h4>
                   <p>{year}</p>
