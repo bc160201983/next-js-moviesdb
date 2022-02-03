@@ -1,10 +1,10 @@
-import { useRouter } from "next/router";
+import { UseRouter } from "next/router";
 import { API_ENDPOINT } from "../../../context/context";
 import Link from "next/link";
 import SingleMovie from "../../../components/SingleMovie";
 
 const index = ({ data }) => {
-  const router = useRouter();
+  const router = UseRouter();
   const id = router.query.id;
 
   return <SingleMovie data={data} />;
