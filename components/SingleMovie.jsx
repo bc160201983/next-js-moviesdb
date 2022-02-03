@@ -26,7 +26,7 @@ const SingleMovie = ({ data }) => {
   const { Poster: poster, Title: title, Plot: plot, Year: year } = data;
   return (
     <section className="single-movie">
-      <Image src={poster} alt={title} width={500} height={500} />
+      <Image src={poster} alt={title} width={270} height={400} />
       <div className="single-movie-info">
         <h2>{title}</h2>
         <p>{plot}</p>
